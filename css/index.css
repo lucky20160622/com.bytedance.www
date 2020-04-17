@@ -1,0 +1,46 @@
+.next{
+    width: 100%;
+    height: 4076px;
+}
+/* 顶部导航 */
+.header{
+    position: relative;
+    width: 100%;
+    height: 101px;
+    background-color: #3c8cff;
+    position: fixed;
+}
+.logo{
+    line-height: 138px; 
+
+}
+.logo img{
+    display: inline-block;
+    width: 166px;
+    margin-left: 144px;
+    height: 43px;
+}
+.header ul{
+    margin-right: 103px;
+    float: right;
+}
+.header li{
+    margin: 0 29px;
+    line-height: 101px;
+    float: left;
+}
+.header ul li a{
+   display: inline-block;
+   font-size: 16px;
+   color: #ffffff;
+}
+.show{
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
+.hiddened{
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
