@@ -22,13 +22,13 @@
                 <img src="./images/logo.png" alt="">
             </a>
             <!-- 顶部导航右边 -->
-            <ul>
-                <li><a href="javascript:;">关于我们</a></li>
-                <li><a href="javascript:;">我们的产品</a></li>
-                <li><a href="javascript:;">新闻动态</a></li>
-                <li><a href="javascript:;">企业社会责任</a></li>
-                <li><a href="javascript:;">加入我们</a></li>
-            </ul>
+            <div class="header-right">
+                <div><a href="#">关于我们</a></div>
+                <div><a href="#">我们的产品</a></div>
+                <div><a href="#">新闻动态</a></div>
+                <div><a href="#">企业社会责任</a></div>
+                <div><a href="#">加入我们</a></div>
+            </div>
         </div>
         <!-- 轮播图 -->
         <!-- <div class="lbt" id='lbt'>
@@ -47,28 +47,28 @@
                 <li></li>
             </ol>
         </div> -->
-        <section-lunbo  style="width: 100%">
+        <section-lunbo style="width: 100%">
             <div id="lb_id" class="lb_box">
                 <div class="lb_imgbox">
                     <div class="lb_imgleft">
                         <div class="lb_img">
-                            <li class="lb_li"><a href=""><img class="img" src="./images/lbt-4.jpg" alt=""></a></li>
-                            <li class="lb_li"><a href=""><img class="img" src="./images/lbt-1.jpg" alt=""></a></li>
-                            <li class="lb_li"><a href=""><img class="img" src="./images/lbt-2.jpg" alt=""></a></li>
-                            <li class="lb_li"><a href=""><img class="img" src="./images/lbt-3.jpg" alt=""></a></li>
-                            <li class="lb_li"><a href=""><img class="img" src="./images/lbt-4.jpg" alt=""></a></li>
-                            <li class="lb_li"><a href=""><img class="img" src="./images/lbt-1.jpg" alt=""></a></li>
+                            <li class="lb_li"><a href="#"><img class="img" src="./images/lbt-4.jpg" alt=""></a></li>
+                            <li class="lb_li"><a href="#"><img class="img" src="./images/lbt-1.jpg" alt=""></a></li>
+                            <li class="lb_li"><a href="#"><img class="img" src="./images/lbt-2.jpg" alt=""></a></li>
+                            <li class="lb_li"><a href="#"><img class="img" src="./images/lbt-3.jpg" alt=""></a></li>#
+                            <li class="lb_li"><a href="#"><img class="img" src="./images/lbt-4.jpg" alt=""></a></li>#
+                            <li class="lb_li"><a href="#"><img class="img" src="./images/lbt-1.jpg" alt=""></a></li>
                         </div>
                     </div>
                     <div class="lb_point">
-                        <ol id = 'test' class="li_ol">
+                        <ol id='test' class="li_ol">
                             <li class="lb_olli"></li>
                             <li class="lb_olli"></li>
                             <li class="lb_olli"></li>
                             <li class="lb_olli"></li>
                         </ol>
                     </div>
-    
+
                     <button id="lb_lbtn" class="lb_btn lb_btnl"></button>
                     <button id="lb_rbtn" class="lb_btn lb_btnr"></button>
                 </div>
@@ -83,26 +83,101 @@
         </div>
         <!-- 企业文化 -->
         <div class="qywh">
-            <!-- 版心 -->
             <div class="container">
                 <!-- 左边 -->
                 <div class="qywh-left">
                     <h3>企业文化</h3>
                     <p>字节范是字节跳动企业文化的重要组成部分，是我们共同认可的行为准则。</p>
                 </div>
-                <!-- 右边 -->
-                <div class="qywh-right">
-                    <img src="./images/qywh1.jpg" alt="">
-                    <div class="qywh-bottom">
-                        <h3>坦诚清晰
-                           <a href="javascript:;"> <img src="./images/qywh-button1.png" alt="" class="lleft"></a>
-                           <a href="javascript:;"> <img src="./images/qywh-button2.png" alt="" class="rright"></a>
-                        </h3>
-                        <p>敢当面表达真实想法<br>
-                            能承认错误，不装不爱面子<br>
-                            实事求是，暴露问题，反对“向上管理”<br>
-                            准确、简洁、直接，有条理有重点</p>
-                    </div>
+                <!-- 大盒子 -->
+                <div class="qywh-box">
+                    <!-- 企业文化1 -->
+                    <ul>
+                        <li>
+                            <div class="qywh-box1">
+                                <img src="./images/qywh1 (2).jpg" alt="">
+                                <div class="qywh-box1-bottom">
+                                    <h3>追求极致</h3>
+                                    <p>
+                                        不断提高要求，延迟满足感<br>
+                                        在更大范围里找最优解，不放过问题，思考本质<br>
+                                        持续学习和成长
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qywh-box1">
+                                <img src="./images/qywh2.jpg" alt="">
+                                <div class="qywh-box1-bottom">
+                                    <h3>务实敢为</h3>
+                                    <p>
+                                        直接体验，深入事实<br>
+                                        不自嗨，注重效果，能突破有担当，打破定式<br>
+                                        尝试多种可能，快速迭代
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qywh-box1">
+                                <img src="./images/qywh3.jpg" alt="">
+                                <div class="qywh-box1-bottom">
+                                    <h3>开放谦逊</h3>
+                                    <p>
+                                        内心阳光，信任伙伴<br>
+                                        乐于助人和求助，合作成大事<br>
+                                        对外敏锐谦虚，ego小，听得进意见<br>
+                                        格局大，上个台阶想问题
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qywh-box1">
+                                <div class="qywh-box1-bottom">
+                                    <img src="./images/qywh4.jpg" alt="">
+                                    <h3>坦诚清晰</h3>
+                                    <p>
+                                        敢当面表达真实想法<br>
+                                        能承认错误，不装不爱面子<br>
+                                        实事求是，暴露问题，反对“向上管理”<br>
+                                        准确、简洁、直接，有条理有重点
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qywh-box1">
+                                <div class="qywh-box1-bottom">
+                                    <img src="./images/qywh5.jpg" alt="">
+                                    <h3>始终创业</h3>
+                                    <p>
+                                        自驱，不设边界，不怕麻烦<br>
+                                        有韧性，直面现实并改变它<br>
+                                        拥抱变化，对不确定性保持乐观<br>
+                                        始终像公司创业第一天那样思考
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="qywh-box1">
+                                <div class="qywh-box1-bottom">
+                                    <img src="./images/qywh6.jpg" alt="">
+                                    <h3>多元兼容</h3>
+                                    <p>
+                                        理解并重视差异和多元，建立火星视角<br>
+                                        打造多元化的团队，欢迎不同背景的人才，激发潜力<br>
+                                        鼓励人人参与，集思广益，主动用不同的想法来挑战自己<br>
+                                        创造海纳百川，兼容友好的工作环境
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:;"><i class="prev"></i></a>
+                    <a href="javascript:;"><i class="next1"></i></a>
                 </div>
             </div>
         </div>
@@ -115,24 +190,72 @@
                 <!-- 内容 -->
                 <div class="dsj-content">
                     <!-- 片段 -->
-                    <div class="dsj-section">
-                        <div class="dsj-sectionone">
-                            <img src="./images/dsj-1.png" alt="">
-                            <div class="words">
-                                <h4>2020年1月</h4>
-                                <p>字节跳动向中国红十字基金会捐赠2亿元，成立“中国红十字基金会字节跳动医务人员人道主义援助基金”</p>
+                    <ul class="ul1">
+                        <li class="li1">
+                            <div class="dsj-section">
+                                <div class="dsj-sectionone">
+                                    <img src="./images/dsj-1.png" alt="">
+                                    <div class="words">
+                                        <h4>2019年1月</h4>
+                                        <p>字节跳动发布商业品牌巨量引擎</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hx">
-                        <img src="./images/dsj-logo1.png" alt="">
-                        <img src="./images/dsj-logo2.png" alt="">
-                        <img src="./images/dsj-logo3.png" alt="">
-                        <img src="./images/dsj-logo4.png" alt="">
-                        <img src="./images/dsj-logo5.png" alt="">
-                        <li></li>
-                    </div>
+                        </li>
+                        <li class="li1">
+                            <div class="dsj-section">
+                                <div class="dsj-sectionone">
+                                    <img src="./images/dsj-2.jpg" alt="">
+                                    <div class="words">
+                                        <h4>2019年8月</h4>
+                                        <p>抖音推出“DOU艺计划”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li1">
+                            <div class="dsj-section">
+                                <div class="dsj-sectionone">
+                                    <img src="./images/dsj-3.png" alt="">
+                                    <div class="words">
+                                        <h4>2019年8月</h4>
+                                        <p>办公套件“飞书”上线</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li1">
+                            <div class="dsj-section">
+                                <div class="dsj-sectionone">
+                                    <img src="./images/dsj-4.png" alt="">
+                                    <div class="words">
+                                        <h4>2020年1月</h4>
+                                        <p>火山小视频全新升级为抖音火山版</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li1">
+                            <div class="dsj-section">
+                                <div class="dsj-sectionone">
+                                    <img src="./images/dsj-5.png" alt="">
+                                    <div class="words">
+                                        <h4>2020年1月</h4>
+                                        <p>字节跳动向中国红十字基金会捐赠2亿元，成立“中国红十字基金会字节跳动医务人员人道主义援助基金”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <div class="hx">
+                    <a href="javascript:;"><img src="./images/dsj-logo1.png" alt="" class="iimg"></a>
+                    <a href="javascript:;"><img src="./images/dsj-logo2.png" alt="" class="iimg"></a>
+                    <a href="javascript:;"><img src="./images/dsj-logo3.png" alt="" class="iimg"></a>
+                    <a href="javascript:;"><img src="./images/dsj-logo4.png" alt="" class="iimg"></a>
+                    <a href="javascript:;"><img src="./images/dsj-logo5.png" alt="" class="iimg"></a>
+                </div>
+                <li class="black"></li>
             </div>
         </div>
         <!-- 人工智能 -->
@@ -201,55 +324,77 @@
             <div class="footer">
                 <!-- 版心 -->
                 <div class="container">
-                   <div class="footer-content1">
+                    <div class="footer-content1">
                         <!-- 尾部logo -->
-                    <a href="https://www.bytedance.com/zh" class="footer-logo">
-                        <img src="./images/logo.png" alt="">
-                    </a>
-                    <!-- 内容 -->
-                    <div class="footer-content">
-                        <div class="item1">
-                            <h5>关于我们</h5>
-                            <a href=""><p>企业文化</p></a>
-                            <a href=""><p>大事记</p></a>
-                            <a href=""><p>我们的产品</p></a>
-                            <a href=""><p>AI Lab</p></a>
-                            <a href=""><p>联系我们</p></a>
+                        <a href="https://www.bytedance.com/zh" class="footer-logo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <!-- 内容 -->
+                        <div class="footer-content">
+                            <div class="item1">
+                                <h5>关于我们</h5>
+                                <a href="javascript:;" class="qywh11">
+                                    <p>企业文化</p>
+                                </a>
+                                <a href="javascript:;" class="ddsj11">
+                                    <p>大事记</p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p>我们的产品</p>
+                                </a>
+                                <a href="javascript:;" class="aaii">
+                                    <p>AI Lab</p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p>联系我们</p>
+                                </a>
+                            </div>
+                            <div class="item2">
+                                <h5>新闻动态</h5>
+                                <a href="javascript:;">
+                                    <p>新闻动态</p>
+                                </a>
+                            </div>
+                            <div class="item3">
+                                <h5>企业社会责任</h5>
+                                <a href="javascript:;">
+                                    <p>维护健康的网络生态平台</p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p>优质内容创造社会价值</p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p>信息助力公益新思路</p>
+                                </a>
+                                <a href="javascript:;">
+                                    <p>可持续发展的经营与管理</p>
+                                </a>
+
+                            </div>
+                            <div class="item4">
+                                <h5>加入我们</h5>
+                                <a href="javascript:;">
+                                    <p>招聘官网 <img src="./images/footer1.png" alt=""></p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="item2">
-                            <h5>新闻动态</h5>
-                           <a href=""> <p>新闻动态</p></a>
-                        </div>
-                        <div class="item3">
-                            <h5>企业社会责任</h5>
-                            <a href=""><p>维护健康的网络生态平台</p></a>
-                            <a href=""><p>优质内容创造社会价值</p></a>
-                            <a href=""><p>信息助力公益新思路</p></a>
-                            <a href=""><p>可持续发展的经营与管理</p></a>
-                          
-                        </div>
-                        <div class="item4">
-                            <h5>加入我们</h5>
-                          <a href=""><p>招聘官网 <img src="./images/footer1.png" alt=""></p></a>
+                        <!-- 底部 -->
+                        <div class="footer-bottom">
+                            <!-- 左边 -->
+                            <div class="footer-bottom-left">
+                                <p> 中文简 <img src="./images/footer3.png" alt=""></p>
+                            </div>
+
+                            <!-- 右边 -->
+                            <div class="footer-bottom-right">
+                                <p>© 2012-2020 字节跳动</p>
+                                <p> <img src="./images/footer2.png" alt=""> 京公网安备 11000002002068号 京ICP备12025439号-7</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- 底部 -->
-                    <div class="footer-bottom">
-                        <!-- 左边 -->
-                        <div class="footer-bottom-left">
-                           <p> 中文简 <img src="./images/footer3.png" alt=""></p>
-                        </div>
-                       
-                        <!-- 右边 -->
-                        <div class="footer-bottom-right">
-                            <p>© 2012-2020 字节跳动</p>
-                            <p> <img src="./images/footer2.png" alt=""> 京公网安备 11000002002068号 京ICP备12025439号-7</p>
-                        </div>
-                    </div>
-                   </div>
                 </div>
             </div>
-        </div>     
+        </div>
 
     </div>
     <script src="./lib/jquery-3.4.1.min.js"></script>
@@ -258,5 +403,3 @@
 </body>
 
 </html>
-
-<div class="bg-ellipse-wrapper"><div class="bg-ellipse bg-ellipse-1"></div><div class="bg-ellipse bg-ellipse-2"></div><div class="bg-ellipse bg-ellipse-3"></div><div class="bg-ellipse bg-ellipse-4"></div><div class="bg-ellipse bg-ellipse-5"></div><div class="bg-ellipse bg-ellipse-6"></div><div class="bg-ellipse bg-ellipse-7"></div><div class="bg-ellipse bg-ellipse-8"></div></div>

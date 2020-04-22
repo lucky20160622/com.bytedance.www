@@ -123,4 +123,91 @@ window.onload = function(){
         }
     }
 }
-// 
+// 企业文化轮播图
+let qywhbox = document.querySelector('.qywh-box')
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next1');
+let sliderWidth = qywhbox.offsetWidth;// 获取窗口的宽度
+let num = 0;// 声明计算器
+let circle = 0;
+let flag = true;
+let ul = document.querySelector('ul');
+let ol = document.querySelector('ol');
+let fisrtLi = document.querySelector('ul li:first-child');
+// console.log(fisrtLi);
+ul.appendChild(fisrtLi.cloneNode(true))
+ul.style.width = ul.children.length * sliderWidth + 'px';
+next.addEventListener('click', function () {
+    // 判断动画状态是否是true
+    if (flag) {
+        flag = false;
+        // 3.判断图片是否走到了最后一个 num
+        // 3.1 如果是 num 的值和图片的个数一样 那么就让num为0
+        // console.log(num, ul.children.length - 1)
+        // 索引是不是最后一个
+        if (num == ul.children.length - 1) {
+            // 那么就让num为0
+            ul.style.left = 0;
+            num = 0;
+        }
+        // 4.让num++
+        num++;
+        // 5.让ul移动
+        animate(ul, {
+            left: -num * sliderWidth
+        }, function () {
+            flag = true;
+        })
+    }
+})
+prev.addEventListener('click', function () {
+    if (flag) {
+        flag = false;
+        // 3.2.判断一下 num是不是0
+        if (num == 0) {
+            // 3.3.如果是0, 让num为ul数组的最大索引
+            num = ul.children.length - 1;
+            // 3.4.同时让ul的left变成 - num * 窗口宽度
+            ul.style.left = -num * sliderWidth + 'px';
+        }
+        // 3.5.让num递减
+        num--;
+        // 3.6.移动ul
+        animate(ul, {
+            left: -num * sliderWidth
+        }, function () {
+            flag = true;
+        })
+    }
+})
+// 大事记
+$('.hx a ').click(function(){
+    let index=$(this).index()
+   
+    $('.ul1').animate({
+        'left':-index*640
+    })
+})
+$('.hx a img').click(function(){
+    let index=$(this).index()
+    $(this).classList.add('.hx1 img').siblings('.hx img')
+})
+// 回到顶部 对应相应的位置
+$('.qywh11').click(function(){
+    window.scrollTo({ 
+        top: 900, 
+        behavior: "smooth" 
+    });
+})
+$('.ddsj11').click(function(){
+    window.scrollTo({ 
+        top: 1800, 
+        behavior: "smooth" 
+    });
+})
+$('.aaii').click(function(){
+    window.scrollTo({ 
+        top: 2450, 
+        behavior: "smooth" 
+    });
+})
