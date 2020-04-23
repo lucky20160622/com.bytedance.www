@@ -211,3 +211,14 @@ $('.aaii').click(function(){
         behavior: "smooth" 
     });
 })
+// 显示隐藏
+$('.bblock').mouseenter(function(){
+    $('.footer-bottom-top').css({
+        'display':'block'
+    })
+})
+$('.footer-bottom-top').mouseleave(function(){
+    $('.footer-bottom-top').css({
+        'display':'none'
+    })
+})

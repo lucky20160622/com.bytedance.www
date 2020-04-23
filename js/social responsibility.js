@@ -11,21 +11,28 @@ $(window).scroll(function(){
     }
 })
 // 回到顶部 对应相应的位置
-$('.qywh11').click(function(){
+$('.wh').click(function(){
     window.scrollTo({ 
-        top: 900, 
+        top: 30, 
+        behavior: "smooth" 
+    });
+    console.log(1);
+})
+$('.yz').click(function(){
+    window.scrollTo({ 
+        top: 700, 
         behavior: "smooth" 
     });
 })
-$('.ddsj11').click(function(){
+$('.xx').click(function(){
     window.scrollTo({ 
-        top: 1800, 
+        top: 2700, 
         behavior: "smooth" 
     });
 })
-$('.aaii').click(function(){
+$('.kcx').click(function(){
     window.scrollTo({ 
-        top: 2450, 
+        top: 4000, 
         behavior: "smooth" 
     });
 })

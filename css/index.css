@@ -504,21 +504,26 @@
 }
 /* 底部 */
 .footer-bottom {
+  position: relative;
   width: 100%;
   height: 50px;
-  margin-top: 130px;
+  margin-top: 15px;
 }
 .footer-bottom-left {
+  position: relative;
   width: 155px;
   height: 27px;
 }
 .footer-bottom-left p {
+  position: absolute;
+  bottom: -135px;
   width: 90%;
   border: 1px solid #fff;
   color: #fff;
   font-size: 14px;
   padding: 5px 6px;
 }
+
 .footer-bottom-left img {
   width: 12px;
   height: 12px;
@@ -550,7 +555,30 @@
 .footer-content p:hover {
   color: rgb(108, 213, 227);
 }
-/* 轮播图 */
+.footer-bottom-top{
+  position: absolute;
+  top: 2px;
+  width: 155px;
+  height: 90px;
+  background-color: rgb(50,93,165);
+  padding: 5px 0px;
+  border-radius: 2px;
+  border: 1px solid #333;
+  margin-top: 30px;
+  margin-bottom: -14px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 1px 1px inset;
+  display: none;
+}
+.footer-bottom-top p{
+  line-height: 1.6;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  padding-left: 5px;
+}
+.footer-bottom-top p:hover{
+  background-color: #3c8cff;
+}
 /* 轮播图 */
 .img {
   width: 100%;

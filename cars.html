@@ -1,25 +1,49 @@
 <html>
 <meta charset=utf-8>
+
 <head>
-<style>
-/* .newsList_pic{
+    <style>
+        /* .newsList_pic{
 	display: block;
     width: 32px;
     height: 32px;
 	overflow: hidden;
 } */
- img{
+        /* img{
     width: 32px;
     height: 32px;
 	transition: all 0.3s;
 }
  img:hover{
 	transform: scale(1.75);
-}
-
-</style>
+} */
+    </style>
 </head>
+
 <body>
-        <img class="" src="./images/dsj-logo3.png" alt="" />
+
+    <body style="height:2000px">
+        <script src="./lib/jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).bind('mousewheel DOMMouseScroll', function (event) { //on也可以 bind监听
+                //Chorme
+                var wheel = event.originalEvent.wheelDelta;
+                var detal = event.originalEvent.detail;
+                if (event.originalEvent.wheelDelta) { //判断浏览器IE,谷歌滚轮事件               
+                    if (wheel > 0) { //当滑轮向上滚动时  
+                        $('.main1').animate({
+                            'top': index * 840
+                        })
+                    }
+                    if (wheel < 0) { //当滑轮向下滚动时  
+                        $('.main1').animate({
+                            'top': -index * 840
+                        })
+                    }
+                }
+            });
+        </script>
+    </body>
 </body>
+
 </html>
