@@ -10,33 +10,55 @@ $(window).scroll(function () {
     windowTop = scrollS;
   }
 });
+
 // 滑动
-
-// function getPageScroll() {
-//     var xScroll, yScroll;
-//     if (self.pageYOffset) {
-//       yScroll = self.pageYOffset;
-//       xScroll = self.pageXOffset;
-//     } else if (document.documentElement && document.documentElement.scrollTop) {
-//       yScroll = document.documentElement.scrollTop;
-//       xScroll = document.documentElement.scrollLeft;
-//     } else if (document.body) {// all other Explorers
-//       yScroll = document.body.scrollTop;
-//       xScroll = document.body.scrollLeft;
-//     }
-//     return new Array(xScroll,yScroll)
-// }
-// console.log(xScroll,yScroll);
-
 var top1 = $(".title1").offset().top; //783
 console.log(top1);
-let flag = true;
 let bodytop = $("body").height(); //7373
 $(window).scroll(function () {
-  if (flag) {
-    if ($(window).scrollTop()>=300) {
+    if ($(window).scrollTop()>=110) {
       $(".title1").stop(true).animate({ top: "2px" }, "slow");
-      flag=false
-    }
   }
 });
+// top2
+$(window).scroll(function () {
+    if ($(window).scrollTop()>=550) {
+      $(".product-list div").stop(true).animate({ top: "2px" }, "slow");
+  }
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=700) {
+    $(".section1 button").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=1000) {
+    $(".title2").stop(true).animate({ top: "0px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=1200) {
+    $(".zw div").stop(true).animate({ top: "0px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=1900) {
+    $(".zw1 div").stop(true).animate({ top: "0px" }, "slow");
+}
+});
+var scrolltopTemp=document.documentElement.scrollTop||document.body.scrollTop
+console.log(scrolltopTemp);
+// 排他
+$('.product-list a').on('mouseenter',function(){
+   $(this).children('img').addClass('active1').parent().siblings().children('img').removeClass('active1')
+   $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
+})
+$('.zw').on('mouseenter',function(){
+  $(this).children('img').addClass('active1').parent().siblings().children('img').removeClass('active1')
+  $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
+})
+$('.zw1').on('mouseenter',function(){
+  $(this).children('img').addClass('active1').parent().siblings().children('img').removeClass('active1')
+  $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
+  console.log(2);
+})
