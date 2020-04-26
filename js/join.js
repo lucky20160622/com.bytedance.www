@@ -37,13 +37,39 @@ $(window).scroll(function () {
 }
 });
 $(window).scroll(function () {
-  if ($(window).scrollTop()>=1200) {
-    $(".zw div").stop(true).animate({ top: "0px" }, "slow");
+  if ($(window).scrollTop()>=1400) {
+    $(".zw span").stop(true).animate({ top: "30px" }, "slow");
 }
 });
 $(window).scroll(function () {
-  if ($(window).scrollTop()>=1900) {
-    $(".zw1 div").stop(true).animate({ top: "0px" }, "slow");
+  if ($(window).scrollTop()>=1600) {
+    $(".zw1 span").stop(true).animate({ top: "30px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=2000) {
+    $(".title3").stop(true).animate({ top: "0px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=2900) {
+    $(".title4").stop(true).animate({ top: "-50px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=2300) {
+    $(".right3").stop(true).animate({ top: "0px" }, "slow");
+}
+});
+
+// 动画
+let flag=true
+$(window).scroll(function () {
+if(flag){
+  if ($(window).scrollTop()>=2300) {
+    $('.zzc').addClass('dh1')
+}
+flag=false
 }
 });
 var scrolltopTemp=document.documentElement.scrollTop||document.body.scrollTop
@@ -53,12 +79,27 @@ $('.product-list a').on('mouseenter',function(){
    $(this).children('img').addClass('active1').parent().siblings().children('img').removeClass('active1')
    $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
 })
-$('.zw').on('mouseenter',function(){
+$('.bbox1').on('mouseenter',function(){
   $(this).children('img').addClass('active1').parent().siblings().children('img').removeClass('active1')
-  $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
+  $(this).children('span').addClass('active').parent().siblings().children('span').removeClass('active')
 })
-$('.zw1').on('mouseenter',function(){
+$('.zw1 a').on('mouseenter',function(){
   $(this).children('img').addClass('active1').parent().siblings().children('img').removeClass('active1')
-  $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
-  console.log(2);
+  $(this).children('span').addClass('active').parent().siblings().children('span').removeClass('active')
 })
+// tab切换
+$('.right3').on('click','.llist',function(){
+  $(this).find('.list-title').addClass('open').parent().siblings().find('.list-title').removeClass('open')
+  $(this).find('.desc').addClass('bblock1').parent().siblings().find('.desc').removeClass('bblock1')
+  
+  let index=$(this).index()
+  // console.log(index);
+  $('.left3').children().eq(index).addClass('bblock2').siblings().removeClass('bblock2')
+  console.log($('.left3').eq(index));
+   $('.zzc').addClass('dh1')
+})
+
+var e = document.querySelector(".zzc");
+	e.addEventListener("animationend", function() {
+    $('.zzc').removeClass('dh1')
+	});

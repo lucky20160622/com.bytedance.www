@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Examples</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <style type="text/css">
-            body{
-                width: 100%;
-                height: auto;
-            }
-            .content{
-                width: 150px;
-                height: 50px;
-                position: absolute;
-                top: 20px;
-                left: 20px;
-                overflow: hidden;
-                background-color: red;
-            }
-            .slide-box{
-                width: 300px;
-                position: relative;
-                overflow: hidden;
-            }
-            .slide1{
-                width: 150px;
-                height: 50px;
-                float: left;
-                display: inline-block;
-                line-height: 50px;
-                text-align: center;
-                background-color: #BDD8CF;
-            }
-            .slide2{
-                width: 150px;
-                height: 50px;
-                float: right;
-                display: inline-block;
-                line-height: 50px;
-                text-align: center;
-                background-color: #C1C4C4;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="content">
-            <div class="slide-box">
-                <span class="slide1">左边的元素</span>
-                <span class="slide2">右边的元素</span>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <style type="text/css">
+        .img-box {
+            width: 100%;
+            height: 216px;
+            border-radius: 100%;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            transition: transform .2s;
+            will-change: transform;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 10px 8px rgba(31, 35, 41, 0.03);
+        }
+
+        .bbox1 {
+            width: 216px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bbox1">
+        <div class="img-box">
+            <img src="./images/cp.png" alt="">
         </div>
- 
-   <script src="./lib/jquery-3.4.1.min.js"></script>
-   <script src="./lib/animate.js"></script>
+        <span>产品</span>
+    </div>
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./lib/animate.js"></script>
     <script type="text/javascript">
-        $(function(){
-            $(".content").hover(function(){
-                $(".slide-box").stop(true).animate({top:"150px"},'slow');
-            },function(){
-                $(".slide-box").stop(true).animate({top:"0"},'slow');
-            });
-        })
+
     </script>
-    </body>
+</body>
+
 </html>
