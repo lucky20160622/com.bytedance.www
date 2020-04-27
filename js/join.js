@@ -12,9 +12,6 @@ $(window).scroll(function () {
 });
 
 // 滑动
-var top1 = $(".title1").offset().top; //783
-console.log(top1);
-let bodytop = $("body").height(); //7373
 $(window).scroll(function () {
     if ($(window).scrollTop()>=110) {
       $(".title1").stop(true).animate({ top: "2px" }, "slow");
@@ -52,24 +49,96 @@ $(window).scroll(function () {
 }
 });
 $(window).scroll(function () {
-  if ($(window).scrollTop()>=2900) {
-    $(".title4").stop(true).animate({ top: "-50px" }, "slow");
-}
-});
-$(window).scroll(function () {
   if ($(window).scrollTop()>=2300) {
     $(".right3").stop(true).animate({ top: "0px" }, "slow");
 }
 });
-
-// 动画
-let flag=true
 $(window).scroll(function () {
-if(flag){
-  if ($(window).scrollTop()>=2300) {
-    $('.zzc').addClass('dh1')
+  if ($(window).scrollTop()>=2800) {
+    $(".title4").stop(true).animate({ top: "-90px" }, "slow");
 }
-flag=false
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=3100) {
+    $("#left4").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=3800) {
+    $(".title5-1").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=3900) {
+    $(".title-item1").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=4000) {
+    $(".title-item2").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=4700) {
+    $(".left6").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=5400) {
+    $(".title7-1").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=5600) {
+    $(".item").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=6200) {
+    $(".left8").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=6800) {
+    $(".title9").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=7100) {
+    $(".yg").stop(true).animate({ top: "2px" }, "slow");
+}
+});
+// 动画
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=2300) {
+    $('.zzc1').addClass('dh2')
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=3100) {
+    $('.zzc2').addClass('dh3')
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=3800) {
+    $('.zzc3').addClass('dh3')
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=4700) {
+    $('.zzc4').addClass('dh3')
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=5600) {
+    $('.zzc5').addClass('dh3')
+}
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop()>=6200) {
+    $('.zzc6').addClass('dh3')
 }
 });
 var scrolltopTemp=document.documentElement.scrollTop||document.body.scrollTop
@@ -102,4 +171,43 @@ $('.right3').on('click','.llist',function(){
 var e = document.querySelector(".zzc");
 	e.addEventListener("animationend", function() {
     $('.zzc').removeClass('dh1')
-	});
+  });
+  // 尾部
+  $('#wx1').on('mouseenter',function(){
+    $('.gzh1').css({
+      'display':'block'
+    })
+  })
+  $('#dy1').on('mouseenter',function(){
+    $('.gzh2').css({
+      'display':'block'
+    })
+  })
+  $('#wx1').on('mouseleave',function(){
+    $('.gzh1').css({
+      'display':'none'
+    })
+  })
+  $('#dy1').on('mouseleave',function(){
+    $('.gzh2').css({
+      'display':'none'
+    })
+  })
+  // 返回顶部
+  $(window).scroll(function(){
+    if($(window).scrollTop()>=2300){
+      $('.dbdh').css({
+        'display':'block'
+      })
+    }else{
+      $('.dbdh').css({
+        'display':'none'
+      })
+    }
+  })
+$('.dbdh').on('click',function(){
+  $('html,body').animate({
+    scrollTop:0
+  },'slow')
+})
+// 导航变色
