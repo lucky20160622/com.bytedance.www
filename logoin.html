@@ -40,28 +40,56 @@
                 <a href="javascript:;" class="tabs-one tabs-dj">手机登录</a>
                 <a href="javascript:;" class="tabs-two">邮箱登录</a>
             </div>
-            <!-- 切换内容 -->
-            <div class="tabs-left">
+            <!-- 切换内容 手机登录-->
+            <div class="tabs-left open">
                 <!-- 输入框 -->
                 <div class="search1">
                     <span>+86</span>
-                    <input type="text" placeholder="手机号">
+                    <input type="text" placeholder="手机号" name='0' class='sr' id='lq2'>
+                </div>
+                <!-- 提示 -->
+                <div class="ts1" id='ts'>
+                    请输入手机号
                 </div>
                 <div class="search2">
-                    <input type="text" placeholder="验证码">
-                    <a href='javascript:;'>获取验证码</a>
+                    <input type="text" placeholder="验证码" name="1" class='sr' >
+                    <a href='javascript:;' class="lq1">获取验证码</a>
+                </div>
+                <!-- 提示 -->
+                <div class="ts2" id='ts'>
+                    请输入验证码
                 </div>
                 <div class="logoin">
                     <a href="javascript:;">登录</a>
                 </div>
                 <p>未注册的手机号验证后将自动创建账号</p>
             </div>
+            <!-- 切换内容 邮箱登录-->
+            <div class="tabs-right open">
+                <!-- 输入框 -->
+                <div class="search3">
+                    <input type="text" placeholder="邮箱" name="2" class='sr'>
+                </div>
+                <div class="ts3" id='ts'>
+                    请输入邮箱
+                </div>
+                <div class="search4">
+                    <input type="text" placeholder="密码" name="3" class='sr'>
+                </div>
+                <div class="ts4" id='ts'>
+                    请输入密码
+                </div>
+                <div class="logoin">
+                    <a href="javascript:;" class="btn">登录</a>
+                </div>
+                <p>没有邮箱账户？<a href="javascript:;">创建账号</a></p>
+            </div>
             <!-- 底部内容 -->
             <div class="tabs-bottom">
                 <h5>第三方账号快速登录</h5>
                 <div class="logoin-gzh">
-                    <img src="./images/wechat.png" alt="" >
-                    <img src="./images/gzh-face.png" alt="" >
+                    <img src="./images/wechat.png" alt="">
+                    <img src="./images/gzh-face.png" alt="">
                     <img src="./images/in2.png" alt="">
                 </div>
                 <div class="loginAgreement">登录即同意 <a href="/society/legal/protocol">用户协议</a> 与 <a
@@ -69,8 +97,8 @@
             </div>
         </div>
     </div>
-     <!-- 尾部 -->
-     <div class="footer">
+    <!-- 尾部 -->
+    <div class="footer">
         <!-- 内容 -->
         <div class="content10">
             <div class="ittem1">
@@ -80,10 +108,8 @@
             </div>
             <div class="ittem2">
                 <h5>联系我们</h5>
-                <a href="mailto:globaltalent@bytedance.com" rel="noopener noreferrer"
-                    target="_blank">关于投递</a><br><br>
-                <a href="mailto:globaltalent@bytedance.com" rel="noopener noreferrer"
-                    target="_blank">意见反馈</a><br><br>
+                <a href="mailto:globaltalent@bytedance.com" rel="noopener noreferrer" target="_blank">关于投递</a><br><br>
+                <a href="mailto:globaltalent@bytedance.com" rel="noopener noreferrer" target="_blank">意见反馈</a><br><br>
             </div>
             <div class="ittem3">
                 <h5>企业官网</h5>

@@ -78,6 +78,7 @@
   height: 600px;
 }
 .tabs-content {
+  position: relative;
   width: 480px;
   height: 551px;
   margin: 90px auto;
@@ -113,26 +114,52 @@
   font-weight: 700;
   border-bottom: 2px solid #3370ff;
 }
-/* 输入框 */
+/* 定位 */
 .tabs-left{
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.tabs-right{
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: none;
+}
+
+/* 输入框 */
+.tabs-left,
+.tabs-right{
   margin-top: 40px;
   width: 480px;
   height: 300px;
   border-bottom: 1px solid rgb(239, 240, 241);
   margin-bottom: 30px;
 }
+/* hover边框 */
+.search1:hover,
+.search2:hover,
+.search3:hover,
+.search4:hover{
+border:1px solid #3370ff;
+}
+
 /* 第一框 */
-.search1{
+.search1,
+.search3{
+  position: relative;
   width: 480px;
   height: 40px;
   border: 1px solid #cccccc;
   border-radius: 20px;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 input{
   color: #333333;
 }
-.search1 input{
+.search1 input,
+.search3 input{
   border: none;
   font-size: 16px;
   width: 354px;
@@ -141,6 +168,23 @@ input{
   border-left: 1px solid rgb(239, 240, 241);
   box-sizing: border-box;
   padding-left: 15px;
+}
+.search3 input{
+  border: none;
+}
+
+.tabs-right p{
+  width: 480px;
+  height: 22px;
+  color: #8F959E;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.tabs-right p a{
+  color: #3370ff;
+}
+.tabs-right p a:hover{
+  opacity: 0.5;
 }
 .search1 span{
   display: inline-block;
@@ -160,14 +204,17 @@ input{
   color: rgb(201,202,203);
 }
 /* 第二框 */
-.search2{
+.search2,
+.search4{
+  position: relative;
   width: 480px;
   height: 40px;
   overflow: hidden;
   border: 1px solid #cccccc;
   border-radius: 20px;
 }
-.search2 input{
+.search2 input,
+.search4 input{
   border: none;
   font-size: 16px;
   width: 354px;
@@ -177,6 +224,9 @@ input{
  border-radius: 20px;
  box-sizing: border-box;
  padding-left: 20px;
+}
+.colora{
+  border:1px solid #3370ff;
 }
 .search2 a{
   display: inline-block;
@@ -227,6 +277,8 @@ input{
 .tabs-bottom{
   width: 480px;
   height: 150px;
+  position: absolute;
+  top: 420px;
   text-align: center;
 }
 .tabs-bottom h5{
@@ -259,7 +311,43 @@ input{
 .loginAgreement a:hover{
   opacity: 0.5;
 }
-
+/* 提示文字 */
+#ts{
+  position: absolute;
+  width: 480px;
+  height: 22px;
+  color: #F54A45;
+  font-size: 14px;
+}
+.ts1{
+  top: 46px;
+  display: none;
+}
+.ts2{
+  top: 120px;
+  display: none;
+}
+.ts3{
+  top: 46px;
+  display: none;
+}
+.ts4{
+  top: 120px;
+  display: none;
+}
+.bblock{
+  display: block;
+}
+.nnoe{
+  display: none;
+}
+.hs{
+  border: 1px solid #F54A45;
+}
+/* 输入框亮起 */
+.lq{
+  background-color: #3370ff;
+}
 /* 尾部 */
 .footer {
   width: 100%;
