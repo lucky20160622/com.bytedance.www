@@ -64,7 +64,11 @@ let bannerMove = setInterval(function () {
 // 点击左侧导航添加类名
 $('.tabs-list h5').on('click',function(){
     $(this).addClass('active').siblings().removeClass('active')
+   let index=$(this).index()
+   console.log($('.tabs-rightab').eq(index));
+   $('.tabs-rightab>div').eq(index).show().siblings().hide()
 })
+
 // 职位分类点击事件
 $('.zw-list a').on('click',function(){
     $(this).addClass('active1').siblings().removeClass('active1')
@@ -72,4 +76,16 @@ $('.zw-list a').on('click',function(){
 // 
 $('.zw-list .wid').on('click',function(){
     $(this).addClass('active2').siblings().removeClass('active2')
+})
+
+// 视频播放
+$('.vedio-itemone').on('click',function(){
+  $(".novice").hide();
+  $(".vedio-item").hide();
+  $(".novice")[0].pause();
+})
+$('.play').on('click',function(){
+  $(".novice").show();
+  $(".vedio-item").show();
+  $(".novice")[0].play();
 })
