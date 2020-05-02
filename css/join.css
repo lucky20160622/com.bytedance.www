@@ -1203,10 +1203,9 @@ video {
   top: 200px;
   float: left;
   box-sizing: border-box;
-  width: 384px;
   height: 550px;
   border-radius: 10px;
-  width: 384px;
+  width: 345px;
   padding: 40px 60px 27px;
   margin: 0 24px;
   background: #fff;
@@ -1328,16 +1327,18 @@ letter-spacing: 1px;
   opacity: 0.5;
 }
 .ittem4{
-  position: relative;
+  width: 360px;
+  height: 88px;
+  margin-left: 29px;
   text-align: center;
   margin-top: 75px;
   float: left;
-  width: 416px;
-  height: 100px;
 }
 .lggo{
   margin-top: 20px;
   width: 408px;
+  box-sizing: border-box;
+  padding-right: 40px;
   height: 40px;
 }
 .ittem4 img{
@@ -1357,36 +1358,15 @@ letter-spacing: 1px;
 .gzh1{
   display: none;
   top: -206px;
-  right: -980px;
+  right: -990px;
 }
 .gzh2{
   display: none;
   top: -207px;
-  right: -1035px;
+  right: -1050px;
 }
 .gzh2 img,
 .gzh1 img{
   width: 150px;
   height: 150px;
-}
-/* 返回顶部 */
-.dbdh{
-  position: fixed;
-  right: 0;
-  top: 85%;
-  z-index: 20;
-  display: none;
-  width: 40px;
-  height: 40px;
-  opacity: 0.5;
-}
-.dbdh a{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-}
-.dbdh img{
-  width: 40px;
-  height: 40px;
 }
