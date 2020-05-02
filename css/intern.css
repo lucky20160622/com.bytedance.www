@@ -1,0 +1,177 @@
+/* 顶部导航 */
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+/* logo */
+.header-logo {
+  float: left;
+  width: 226px;
+  height: 79px;
+  padding: 30px 0px 27px 120px;
+}
+.header-logo img {
+  width: 218px;
+  height: 25px;
+}
+/* 答疑专区 */
+
+/* 左边文字 */
+.header-left {
+  float: left;
+  width: 650px;
+  height: 80px;
+  color: #333333;
+  font-size: 18px;
+  margin: 3px 30px 0px 68px;
+  padding: 27px 0px;
+}
+.header-left a {
+  display: inline-block;
+  width: 128px;
+  height: 25px;
+}
+.header a:hover {
+  color: rgb(0, 140, 255);
+}
+.header-left a:nth-child(1) {
+  color: rgb(0, 140, 255);
+}
+/* 右边登录 */
+.right-logoin {
+  float: left;
+  width: 36px;
+  font-size: 18px;
+  height: 24px;
+  margin-top: 30px;
+  color: #333333;
+  margin-left: 110px;
+}
+/* 右边文字 */
+.right-size {
+  float: right;
+  line-height: 36px;
+  height: 36px;
+  width: 120px;
+  margin: 22px 120px 27px 43px;
+  padding-left: 12px;
+  background-image: url(../images/recruit-right-jt.png);
+  background-size: 12px 12px;
+  background-position: 107px 13px;
+  background-repeat: no-repeat;
+}
+
+.right-size a {
+  display: inline-block;
+  font-size: 18px;
+  color: rgb(0, 140, 255);
+  border: 1px solid rgb(0, 140, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 26px;
+  position: absolute;
+  top: 22px;
+}
+/* 内容 */
+.content{
+    width: 100%;
+    height: 837px;
+    background-image: url("../images/bjt.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.content1{
+    width: 100%;
+    height: 837px;
+    padding: 136px 0px 0px;
+}
+.item1{
+    position: relative;
+    border-radius: 10px;
+    float: left;
+    width: 573px;
+    height: 377px;
+    background-image: url("../images/bjt1.jpg");
+    background-size: 100% 100%;
+    margin-left: 125px;
+    box-sizing: border-box;
+    padding: 64px;
+}
+.box{
+    box-shadow: 0 5px 17px 0 rgba(174,171,124);
+}
+.item1 h5{
+    width: 450px;
+    height: 36px;
+    color: #1f2329;
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.item1 p{
+    width: 447px;
+    height: 30px;
+    color: #8f959e;
+    font-size: 18px;
+}
+.content img{
+    width: 61px;
+    height: 61px;
+    margin-top: 95px;
+    background-color: rgb(229,243,255);
+}
+.iimg1{
+    position: absolute;
+    left: 64px;
+    top: 161px;
+    display: none;
+}
+.iimg2{
+    position: absolute;
+    left: 64px;
+    top: 161px;
+    display: none;
+}
+.bblock{
+    display: block;
+}
+.oone{
+
+}
+.ttwo{
+  
+}
+/* 尾部 */
+.footer {
+    width: 100%;
+    height: 110px;
+    background: #fff;
+  }
+  .footer-content {
+    height: 50px;
+    padding: 30px 0;
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  /* title */
+  .footer-title1 {
+    text-align: center;
+    color: #999;
+    margin-bottom: 12px;
+  }
+  .footer-title1 a {
+    color: #999;
+  }
+  .footer-title1 a:hover {
+    color: rgb(50, 90, 180);
+  }
+  .footer-title1 img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+  }
+  

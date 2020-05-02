@@ -1,0 +1,16 @@
+$('#iitem').mouseenter(function(){
+    $('#iitem').addClass('box')
+    $('.iimg1').addClass('bblock')
+})
+$('#iitem').mouseleave(function(){
+    $('#iitem').removeClass('box')
+    $('.iimg1').removeClass('bblock')
+})
+$('#iitem2').mouseenter(function(){
+    $(this).addClass('box')
+    $('.iimg2').addClass('bblock')
+})
+$('#iitem2').mouseleave(function(){
+    $(this).removeClass('box')
+    $('.iimg2').removeClass('bblock')
+})
