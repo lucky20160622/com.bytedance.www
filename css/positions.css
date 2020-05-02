@@ -228,6 +228,7 @@ input{outline:none}
   font-size: 14px;
   padding: 0px 0px 12px;
   border-bottom: 1px solid rgb(195, 198, 203);
+  color: #646a73;
 }
 .list b{
     font-weight: 600;
@@ -240,7 +241,7 @@ input{outline:none}
     width: 28px;
     height: 19px;
     float: right;
-    color: #646a73;
+    cursor: pointer;
 }
 input{
     width: 15px;
@@ -291,6 +292,9 @@ input{
 }
 .none{
     display: none;
+}
+.colorr{
+  color: rgb(51, 112, 255);
 }
 #gd{
     border-bottom: 1px solid rgb(195, 198, 203);

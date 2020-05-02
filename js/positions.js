@@ -33,4 +33,12 @@ $("#wx1").on("mouseenter", function () {
       display: "none",
     });
   });
-  
+  // 点击按钮
+  $('.checkbox1').on('click',function(){
+    $(this).siblings('.checkbox2').show().parent().siblings().children('.checkbox2').hide()
+    $('.list-title span').addClass('colorr')
+  })
+  $('.list-title span').on('click',function(){
+    $('.checkbox2').hide()
+    $('.list-title span').removeClass('colorr')
+  })
