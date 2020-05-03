@@ -333,3 +333,120 @@ color: #3c8cff;
 .footer-bottom-top p:hover{
   background-color: #3c8cff;
 }
+/* 背景 */
+body{
+  position: relative;
+}
+.bg-ellipse-full-wrapper {
+  z-index: -20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(98.63deg, rgba(248, 249, 251, 0.546) 20.59%, rgba(120, 230, 220, 0) 89.33%);
+}
+
+.bg-ellipse-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  z-index: -1;
+}
+
+.bg-ellipse {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 51%;
+  z-index: -1;
+  -webkit-transition: -webkit-transform .3s linear;
+  -webkit-transition: transform .3s linear;
+  transition: transform .3s linear;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+.bg-ellipse-wrapper .bg-ellipse-1 {
+  right: -200px;
+  top: 30px;
+  background: linear-gradient(44.11deg, rgba(139, 233, 223, 0.75) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: rotate(-85.35deg);
+  -ms-transform: rotate(-85.35deg);
+  transform: rotate(-85.35deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-2 {
+  left: -200px;
+  top: 500px;
+  background: linear-gradient(44.11deg, rgba(124, 177, 235, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: rotate(-21.57deg);
+  -ms-transform: rotate(-21.57deg);
+  transform: rotate(-21.57deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-3 {
+  right: -200px;
+  top: 1100px;
+  background: linear-gradient(44.11deg, rgba(245, 198, 39, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: scale(0.85) rotate(-63.95deg);
+  -ms-transform: scale(0.85) rotate(-63.95deg);
+  transform: scale(0.85) rotate(-63.95deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-4 {
+  left: -200px;
+  top: 1600px;
+  background: linear-gradient(44.11deg, rgba(139, 233, 223, 0.75) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: rotate(-29.1deg);
+  -ms-transform: rotate(-29.1deg);
+  transform: rotate(-29.1deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-5 {
+  right: -200px;
+  top: 2300px;
+  background: linear-gradient(44.11deg, rgba(124, 177, 235, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: rotate(-70.95deg);
+  -ms-transform: rotate(-70.95deg);
+  transform: rotate(-70.95deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-6 {
+  left: -200px;
+  top: 2850px;
+  background: linear-gradient(44.11deg, rgba(245, 198, 39, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: scale(0.95) rotate(-21.57deg);
+  -ms-transform: scale(0.95) rotate(-21.57deg);
+  transform: scale(0.95) rotate(-21.57deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-7 {
+  right: -200px;
+  top: 2200px;
+  background: linear-gradient(44.11deg, rgba(139, 233, 223, 0.75) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: scale(0.85) rotate(-93.95deg);
+  -ms-transform: scale(0.85) rotate(-93.95deg);
+  transform: scale(0.85) rotate(-93.95deg);
+}
+
+.bg-ellipse-wrapper .bg-ellipse-8 {
+  left: -200px;
+  top: 2500px;
+  background: linear-gradient(44.11deg, rgba(124, 177, 235, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+  -webkit-transform: rotate(-21.95deg);
+  -ms-transform: rotate(-21.95deg);
+  transform: rotate(-21.95deg);
+}

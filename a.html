@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      position: relative;
+      height: 4076px;
+    }
+
+    .bg-ellipse-full-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      background: linear-gradient(98.63deg, rgba(248, 249, 251, 0.546) 20.59%, rgba(120, 230, 220, 0) 89.33%);
+    }
+
+    .bg-ellipse-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      z-index: -1;
+    }
+
+    .bg-ellipse {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 51%;
+      z-index: -1;
+      -webkit-transition: -webkit-transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      transition: transform .3s linear;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-perspective: 1000;
+      -moz-perspective: 1000;
+      -ms-perspective: 1000;
+      perspective: 1000;
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-1 {
+      right: -1.9rem;
+      top: .1rem;
+      background: linear-gradient(44.11deg, rgba(139, 233, 223, 0.75) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: rotate(-85.35deg);
+      -ms-transform: rotate(-85.35deg);
+      transform: rotate(-85.35deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-2 {
+      left: -100px;
+      top: 500px;
+      background: linear-gradient(44.11deg, rgba(124, 177, 235, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: rotate(-21.57deg);
+      -ms-transform: rotate(-21.57deg);
+      transform: rotate(-21.57deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-3 {
+      right: -100px;
+      top: 800px;
+      background: linear-gradient(44.11deg, rgba(245, 198, 39, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: scale(0.85) rotate(-63.95deg);
+      -ms-transform: scale(0.85) rotate(-63.95deg);
+      transform: scale(0.85) rotate(-63.95deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-4 {
+      left: -100px;
+      top: 1270px;
+      background: linear-gradient(44.11deg, rgba(139, 233, 223, 0.75) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: rotate(-29.1deg);
+      -ms-transform: rotate(-29.1deg);
+      transform: rotate(-29.1deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-5 {
+      right: -100px;
+      top: 1600px;
+      background: linear-gradient(44.11deg, rgba(124, 177, 235, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: rotate(-70.95deg);
+      -ms-transform: rotate(-70.95deg);
+      transform: rotate(-70.95deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-6 {
+      left: -100px;
+      top: 1900px;
+      background: linear-gradient(44.11deg, rgba(245, 198, 39, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: scale(0.95) rotate(-21.57deg);
+      -ms-transform: scale(0.95) rotate(-21.57deg);
+      transform: scale(0.95) rotate(-21.57deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-7 {
+      right: -100px;
+      top: 2200px;
+      background: linear-gradient(44.11deg, rgba(139, 233, 223, 0.75) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: scale(0.85) rotate(-93.95deg);
+      -ms-transform: scale(0.85) rotate(-93.95deg);
+      transform: scale(0.85) rotate(-93.95deg);
+    }
+
+    .bg-ellipse-wrapper .bg-ellipse-8 {
+      left: -100px;
+      top: 2500px;
+      background: linear-gradient(44.11deg, rgba(124, 177, 235, 0.6) 8.94%, rgba(255, 255, 255, 0) 86.73%);
+      -webkit-transform: rotate(-21.95deg);
+      -ms-transform: rotate(-21.95deg);
+      transform: rotate(-21.95deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-ellipse-full-wrapper">
+    <div class="bg-ellipse-wrapper">
+      <div class="bg-ellipse bg-ellipse-1" style="transform: translate3d(0px, 7px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-2" style="transform: translate3d(0px, 10.5px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-3" style="transform: translate3d(0px, 3.5px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-4" style="transform: translate3d(0px, 7px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-5" style="transform: translate3d(0px, 10.5px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-6" style="transform: translate3d(0px, 3.5px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-7" style="transform: translate3d(0px, 7px, 0px);"></div>
+      <div class="bg-ellipse bg-ellipse-8" style="transform: translate3d(0px, 10.5px, 0px);"></div>
+    </div>
+  </div>
+</body>
+
+</html>
