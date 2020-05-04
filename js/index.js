@@ -222,3 +222,31 @@ $('.footer-bottom-top').mouseleave(function(){
         'display':'none'
     })
 })
+// 背景滚动
+$(window).scroll(function(){
+    if($(window).scrollTop()>=$('.qywh').scrollTop()){
+        $(".bg-ellipse-wrapper .bg-ellipse-2 ").stop(true).animate({ top: "520px" }, "slow");
+    }
+})
+
+$(window).scroll(function(){
+    if($(window).scrollTop()>=900){
+        $(".bg-ellipse-wrapper .bg-ellipse-3 ").stop(true).animate({ top: "1100px" }, "slow");
+    }
+})
+
+$(window).scroll(function(){
+    if($(window).scrollTop()>=1300){
+        $(".bg-ellipse-wrapper .bg-ellipse-4 ").stop(true).animate({ top: "1600px" }, "slow");
+    }
+})
+$(window).scroll(function(){
+    if($(window).scrollTop()>=2200){
+        $(".bg-ellipse-wrapper .bg-ellipse-5 ").stop(true).animate({ top: "2400px" }, "slow");
+    }
+})
+$(window).scroll(function(){
+    if($(window).scrollTop()>=2400){
+        $(".bg-ellipse-wrapper .bg-ellipse-6 ").stop(true).animate({ top: "2950px" }, "slow");
+    }
+})
